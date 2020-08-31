@@ -1,5 +1,17 @@
 @import "../../../styles.scss";
 
+#cord {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#logo {
+  margin-top: 10px;
+  text-align: center;
+}
+
 .container {
   position: fixed;
   top: 0;
@@ -11,6 +23,106 @@
 }
 
 .rotate-90 {
-  margin: 0;
-  transform: rotate(-90deg);
+  writing-mode: vertical-lr;
+  white-space: nowrap;
+  overflow: visible;
+  margin: auto;
+}
+
+a {
+  display: block;
+  color: $white;
+}
+.media-icon {
+  font-size: 30px;
+}
+
+p.rotate-90 {
+  color: $opacityFont;
+}
+
+div.circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border: 2px solid $white;
+  opacity: 0.8;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+div.circle:nth-child(1) {
+  animation-name: logo1;
+  animation-duration: 2500ms;
+}
+
+div.circle:nth-child(2) {
+  animation-name: logo2;
+  animation-duration: 2000ms;
+}
+
+div.circle:nth-child(3) {
+  animation-name: logo3;
+  animation-duration: 1500ms;
+}
+
+@keyframes logo1 {
+  0% {
+    box-shadow: 0 0 1px$white;
+    background: transparent;
+  }
+  25% {
+    box-shadow: 0 0 3px$white;
+  }
+  50% {
+    box-shadow: 0 0 5px$white;
+    background: $white;
+  }
+  75% {
+    box-shadow: 0 0 8px$white;
+  }
+  100% {
+    box-shadow: 0 0 10px$white;
+  }
+}
+
+@keyframes logo2 {
+  0% {
+    box-shadow: 0 0 1px$white;
+    background: transparent;
+  }
+  25% {
+    box-shadow: 0 0 3px$white;
+  }
+  50% {
+    box-shadow: 0 0 5px$white;
+  }
+  75% {
+    box-shadow: 0 0 8px$white;
+    background: $white;
+  }
+  100% {
+    box-shadow: 0 0 10px$white;
+  }
+}
+
+@keyframes logo3 {
+  0% {
+    box-shadow: 0 0 1px$white;
+    background: transparent;
+  }
+  25% {
+    box-shadow: 0 0 3px$white;
+  }
+  50% {
+    box-shadow: 0 0 5px$white;
+  }
+  75% {
+    box-shadow: 0 0 8px$white;
+  }
+  100% {
+    box-shadow: 0 0 10px$white;
+    background: $white;
+  }
 }

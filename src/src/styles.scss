@@ -8,6 +8,7 @@ $white: #fff;
 $opacityFont: #6b5266;
 $whiteFont: #fff;
 $fontFamily: "Orbitron", sans-serif;
+
 html,
 body {
   height: 100%;
@@ -17,4 +18,8 @@ body {
   font-weight: 700;
   font-size: 13px;
   color: $whiteFont;
+}
+
+.circle {
+  border-radius: 50%;
 }
