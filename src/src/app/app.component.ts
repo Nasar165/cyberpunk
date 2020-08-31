@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
     this.myParams = {
       particles: {
         number: {
-          value: 50,
+          value: 100,
         },
       },
       interactivity: {
