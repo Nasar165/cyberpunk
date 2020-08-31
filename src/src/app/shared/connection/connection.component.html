@@ -3,6 +3,8 @@
   [style.top]="top"
   [style.right]="right"
   [style.opacity]="opacity"
+  [style.font-size]="fontSize + 'px'"
+  [class.light-font]="fontSize < 11"
 >
   <p class="klingon">{{ title }}</p>
   <div class="circle {{ connection }}"></div>

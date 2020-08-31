@@ -11,6 +11,7 @@ export class ConnectionComponent implements OnInit {
   top: string;
   right: string;
   opacity: number;
+  fontSize: number;
   constructor() {}
 
   ngOnInit(): void {
@@ -22,6 +23,7 @@ export class ConnectionComponent implements OnInit {
         setTimeout(() => {
           this.top = Math.floor(Math.random() * 80) + 20 + '%';
           this.right = Math.floor(Math.random() * 60) + 20 + '%';
+          this.fontSize = Math.floor(Math.random() * 11) + 6;
           this.opacity = 1;
         }, 1500);
       }, Math.floor(Math.random() * 10000) + 2000);

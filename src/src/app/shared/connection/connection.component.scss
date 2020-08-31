@@ -27,6 +27,12 @@ div.circle {
   box-shadow: 0 0 1px$white;
 }
 
+div.light-font {
+  p {
+    color: $opacityFont;
+  }
+}
+
 div.circle.yellow {
   background: $yellow;
 }
@@ -34,6 +40,7 @@ div.circle.yellow {
 div.circle.red {
   background: red;
 }
+
 @keyframes connection {
   0% {
     filter: blur(1px);
