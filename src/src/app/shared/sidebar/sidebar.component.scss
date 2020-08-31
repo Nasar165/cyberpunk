@@ -1,0 +1,16 @@
+@import "../../../styles.scss";
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: solid 1px rgba($color: $white, $alpha: 0.2);
+  width: 70px;
+  height: 100vh;
+  text-align: center;
+}
+
+.rotate-90 {
+  margin: 0;
+  transform: rotate(-90deg);
+}

@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-$primer: #3f1035;
+$primer: #231520;
 $darkRed: #8f0303;
 $pink: #d01baa;
 $green: #49a634;
@@ -7,7 +7,14 @@ $yellow: #efe71a;
 $white: #fff;
 $opacityFont: #6b5266;
 $whiteFont: #fff;
+$fontFamily: "Orbitron", sans-serif;
 html,
 body {
   height: 100%;
+  background: $primer;
+  margin: 0;
+  font-family: $fontFamily;
+  font-weight: 700;
+  font-size: 13px;
+  color: $whiteFont;
 }
