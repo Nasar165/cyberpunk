@@ -6,8 +6,34 @@
 ></particles>
 <router-outlet></router-outlet>
 <app-sidebar></app-sidebar>
+<app-connection [title]="'NEURALINK ESTABLISHED'"></app-connection>
+<app-connection
+  [title]="'FAILED TO ESTABLISHED CONNECTION'"
+  [connection]="'red'"
+  [RandLocation]="true"
+></app-connection>
+<app-connection
+  [title]="'NEURALINK ESTABLISHED'"
+  [RandLocation]="true"
+></app-connection>
 
-<div id="neural-link">
-  <p>NEURALINK ESTABLISHED</p>
-  <div class="circle"></div>
-</div>
+<app-connection
+  [title]="'CONNECTING'"
+  [connection]="'yellow'"
+  [RandLocation]="true"
+></app-connection>
+<app-connection
+  [title]="'FAILED TO ESTABLISHED CONNECTION'"
+  [connection]="'red'"
+  [RandLocation]="true"
+></app-connection>
+<app-connection
+  [title]="'FAILED TO ESTABLISHED CONNECTION'"
+  [connection]="'red'"
+  [RandLocation]="true"
+></app-connection>
+<app-connection
+  [title]="'FAILED TO ESTABLISHED CONNECTION'"
+  [connection]="'red'"
+  [RandLocation]="true"
+></app-connection>
