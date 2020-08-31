@@ -9,6 +9,11 @@ $opacityFont: #6b5266;
 $whiteFont: #fff;
 $fontFamily: "Orbitron", sans-serif;
 
+@font-face {
+  font-family: klingon;
+  src: url("/assets/fonts/klingon.ttf");
+}
+
 html,
 body {
   height: 100%;
@@ -22,4 +27,8 @@ body {
 
 .circle {
   border-radius: 50%;
+}
+
+.klingon {
+  font-family: klingon;
 }
