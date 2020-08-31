@@ -6,6 +6,7 @@
   right: 10px;
   display: flex;
   align-items: center;
+  transition: 500ms opacity ease-in-out;
   p {
     margin: 0;
     display: inline-block;

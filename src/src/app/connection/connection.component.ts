@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-
 @Component({
   selector: 'app-connection',
   templateUrl: './connection.component.html',
@@ -11,6 +10,7 @@ export class ConnectionComponent implements OnInit {
   @Input() RandLocation = false;
   top: string;
   right: string;
+  opacity: number;
   constructor() {}
 
   ngOnInit(): void {
@@ -18,8 +18,12 @@ export class ConnectionComponent implements OnInit {
       this.top = Math.floor(Math.random() * 80) + 20 + '%';
       this.right = Math.floor(Math.random() * 60) + 20 + '%';
       setInterval(() => {
-        this.top = Math.floor(Math.random() * 80) + 20 + '%';
-        this.right = Math.floor(Math.random() * 60) + 20 + '%';
+        this.opacity = 0;
+        setTimeout(() => {
+          this.top = Math.floor(Math.random() * 80) + 20 + '%';
+          this.right = Math.floor(Math.random() * 60) + 20 + '%';
+          this.opacity = 1;
+        }, 1500);
       }, Math.floor(Math.random() * 10000) + 2000);
     }
   }
