@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { ParticlesModule } from 'angular-particle';
 import { CommonModule } from '@angular/common';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ContentComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -17,6 +17,7 @@ export class ConnectionComponent implements OnInit {
   ngOnInit(): void {
     if (this.RandLocation) {
       this.generateNewLocation();
+      let timer = Math.floor(Math.random() * 10000) + 4000;
       setInterval(() => {
         this.setAccessories(0);
         setTimeout(() => {
@@ -24,12 +25,12 @@ export class ConnectionComponent implements OnInit {
           this.fontSize = Math.floor(Math.random() * 11) + 6;
           this.setAccessories(1);
         }, 1500);
-      }, Math.floor(Math.random() * 10000) + 2000);
+      }, timer);
     }
   }
 
   private generateNewLocation(): void {
-    let random = Math.floor(Math.random() * 70) + 20;
+    let random = Math.floor(Math.random() * 60) + 20;
     this.top = random + '%';
     this.right = random + '%';
   }
