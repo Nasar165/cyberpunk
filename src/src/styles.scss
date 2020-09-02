@@ -9,11 +9,6 @@ $opacityFont: #6b5266;
 $whiteFont: #fff;
 $fontFamily: "Orbitron", sans-serif;
 
-@font-face {
-  font-family: klingon;
-  src: url("/assets/fonts/klingon.ttf");
-}
-
 html,
 body {
   height: 100%;
@@ -27,10 +22,6 @@ body {
 
 .circle {
   border-radius: 50%;
-}
-
-.klingon {
-  font-family: klingon;
 }
 
 // Glitch
@@ -97,5 +88,35 @@ body {
   }
   2% {
     transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+// Scramble text Animation
+.scramble-content {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  span {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    display: grid;
+    align-items: center;
+  }
+}
+
+.scramble {
+  span {
+    animation: shuffle steps(10) 1100ms;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes shuffle {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-700px);
   }
 }
